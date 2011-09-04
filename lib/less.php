@@ -7,6 +7,7 @@
 
 	// Include some parts of the engine
 	require_once(DOCROOT . '/symphony/lib/boot/bundle.php');
+	require_once(CONFIG);
 	require_once('dist/lessc.inc.php');
 	
 	function processParams($string){
