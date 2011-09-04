@@ -15,14 +15,15 @@
 		);
 
 		if(preg_match_all('/^(.+)$/i', $string, $matches, PREG_SET_ORDER)){
-			$param->external = (bool)$matches[0][1];
-			$param->file = $matches[0][2];
+			$param->file = $matches[0][1];
 		}
 		
 		return $param;
 	}
 	
 	$param = processParams($_GET['param']);
-	var_dump($param);
 	
+	$lc = new lessc(WORKSPACE . '/' . $param->file);
+	echo $lc->parse();
+		
 	exit;
