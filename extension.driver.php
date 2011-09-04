@@ -1,40 +1,24 @@
 <?php
 
-	Class extension_JIT_Image_Manipulation extends Extension{
+	Class extension_LESS_Compiler extends Extension{
 
 		public function about(){
 			return array(
-				'name' => 'JIT Image Manipulation',
-				'version' => '1.13',
-				'release-date' => '2011-08-16',
+				'name' => 'LESS Compiler',
+				'version' => '1.00',
+				'release-date' => '2011-09-04',
 				'author' => array(
 					array(
-						'name' => 'Alistair Kearney',
-						'website' => 'http://pointybeard.com',
-						'email' => 'alistair@pointybeard.com'
-					),
-					array(
-						'name' => 'Symphony Team',
-						'website' => 'http://symphony-cms.com/',
-						'email' => 'team@symphony-cms.com'
+						'name' => 'Nils Werner',
+						'website' => 'http://www.obssessive-media.de/',
+						'email' => 'nils.werner@gmail.com'
 					)
 				)
 			);
 		}
 
 		public function getSubscribedDelegates(){
-			return array(
-				array(
-					'page' => '/system/preferences/',
-					'delegate' => 'AddCustomPreferenceFieldsets',
-					'callback' => 'appendPreferences'
-				),
-				array(
-					'page' => '/system/preferences/',
-					'delegate' => 'Save',
-					'callback' => '__SavePreferences'
-				)
-			);
+			return array();
 		}
 
 		public function install(){
