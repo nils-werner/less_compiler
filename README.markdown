@@ -3,7 +3,7 @@
 "Just in time" LESS compiler for Symphony CMS.
 
 - Version: 1.0
-- Date: 16th August 2011
+- Date: 4th September 2011
 - Requirements: Symphony 2.2 or later, maybe earlier
 - Author: Nils Werner, nils.werner@gmail.com
 - GitHub Repository: <http://github.com/nils-werner/less_compiler>
