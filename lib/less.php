@@ -23,6 +23,8 @@
 	
 	$param = processParams($_GET['param']);
 	
+	header('Content-type: text/css');
+	
 	$lc = new lessc(WORKSPACE . '/' . $param->file);
 	echo $lc->parse();
 		
