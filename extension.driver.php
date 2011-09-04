@@ -5,7 +5,7 @@
 		public function about(){
 			return array(
 				'name' => 'LESS Compiler',
-				'version' => '1.00',
+				'version' => '1.0',
 				'release-date' => '2011-09-04',
 				'author' => array(
 					array(
