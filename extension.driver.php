@@ -22,6 +22,8 @@
 		}
 
 		public function install(){
+			General::realiseDirectory(CACHE . '/less_compiler/', Symphony::Configuration()->get('write_mode', 'directory'));
+			
 			$htaccess = @file_get_contents(DOCROOT . '/.htaccess');
 
 			if($htaccess === false) return false;
