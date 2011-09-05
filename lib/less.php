@@ -27,6 +27,13 @@
 	header('Content-type: text/css');
 	
 	$lc = new lessc(WORKSPACE . '/' . $param->file);
-	echo $lc->parse();
-		
+	$css = $lc->parse();
+	
+	$filename = pathinfo($param->file);
+	$filename = $filename['filename'];
+	
+	file_put_contents(CACHE . '/less_compiler/' . $filename . '.css', $css);
+	
+	echo $css;
+	
 	exit;
