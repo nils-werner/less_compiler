@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="less_compiler">
+	<name>LESS Compiler</name>
+	<description>Compile LESS-files to proper CSS</description>
+	<repo type="github">https://github.com/nils-werner/less_compiler</repo>
+	<types>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="nils-werner" symphony="phoque">Nils Werner</name>
+			<website>http://www.phoque.de/</website>
+		</author>
+	</authors>
+	<media>
+	</media>
+	<releases>
+		<release version="1.0" date="2011-09-04" min="2.2" />
+	</releases>
+</extension>
