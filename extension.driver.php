@@ -2,21 +2,6 @@
 
 	Class extension_LESS_Compiler extends Extension{
 
-		public function about(){
-			return array(
-				'name' => 'LESS Compiler',
-				'version' => '1.0',
-				'release-date' => '2011-09-04',
-				'author' => array(
-					array(
-						'name' => 'Nils Werner',
-						'website' => 'http://www.obssessive-media.de/',
-						'email' => 'nils.werner@gmail.com'
-					)
-				)
-			);
-		}
-
 		public function getSubscribedDelegates(){
 			return array();
 		}

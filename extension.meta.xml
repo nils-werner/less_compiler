@@ -15,6 +15,9 @@
 	<media>
 	</media>
 	<releases>
+		<release version="1.1" date="2012-06-30" min="2.3">
+			Nothing changed really, just updating meta-info for 2.3
+		</release>
 		<release version="1.0" date="2011-09-04" min="2.2">
 			Initial Release
 		</release>
